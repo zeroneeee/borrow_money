@@ -1,16 +1,37 @@
-# borrow_money
+# Borrow Money - Flutter Application
 
-A new Flutter project.
+![App Screenshot](screenshot.png)
 
-## Getting Started
+## Overview
 
-This project is a starting point for a Flutter application.
+Provide a brief introduction to your Flutter application. Describe what the app does and its main features.
 
-A few resources to get you started if this is your first Flutter project:
+## Table of Contents
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Features
+
+List the key features of your app. For example:
+- Borrow and lend money securely
+- Manage and keep track of borrowed money
+- User authentication and profiles
+- Send and receive payment requests
+
+## Installation
+
+Explain how to install your Flutter application, including any dependencies that need to be installed. You can provide command-line examples if necessary. For example:
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/your-repo.git
+
+# Change directory
+cd your-repo
+
+# Install dependencies
+flutter pub get
