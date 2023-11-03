@@ -1,8 +1,9 @@
-import 'package:borrow_money/colors/colors.dart';
-import 'package:borrow_money/components/button.dart';
+import 'package:borrow_money/presentation/resources/app_colors.dart';
+import 'package:borrow_money/presentation/components/button.dart';
 import 'package:flutter/material.dart';
 
 import 'dashboard.dart';
+import 'demo_dashbord.dart';
 
 // wait create state check login and authen page
 
@@ -31,8 +32,10 @@ class LogInPage extends StatelessWidget {
             MyButton(
               text: "login",
               onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => const Dashboard()));
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const PieChartSample2()));
               },
             ),
           ],

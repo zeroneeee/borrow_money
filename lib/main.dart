@@ -1,4 +1,4 @@
-import 'package:borrow_money/page/login_page.dart';
+import 'package:borrow_money/presentation/page/login_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
