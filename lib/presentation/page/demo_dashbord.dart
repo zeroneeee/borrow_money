@@ -89,7 +89,7 @@ class PieChart2State extends State {
               ],
             ),
 
-            const SizedBox(height: 25),
+            const SizedBox(height: 8),
 
             // List view show record data.
 
@@ -103,6 +103,10 @@ class PieChart2State extends State {
                   dataDemo: listDataDemo[index],
                 ),
               ),
+            ),
+
+            const SizedBox(
+              height: 25,
             ),
             const MyButton(text: "สร้าง"),
           ],
