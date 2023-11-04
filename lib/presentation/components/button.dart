@@ -15,7 +15,7 @@ class MyButton extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(40),
-          color: secondaryColor,
+          color: AppColors.secondaryColor,
         ),
         padding: const EdgeInsets.all(20),
         child: Row(
@@ -23,17 +23,17 @@ class MyButton extends StatelessWidget {
           children: [
             Text(
               text,
-              style: TextStyle(
-                  color: textBaseColor,
+              style: const TextStyle(
+                  color: AppColors.textBaseColor,
                   fontWeight: FontWeight.bold,
                   fontSize: 20),
             ),
             Container(
               width: 20,
             ),
-            Icon(
+            const Icon(
               Icons.arrow_right_alt,
-              color: textBaseColor,
+              color: AppColors.textBaseColor,
             )
           ],
         ),

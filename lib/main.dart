@@ -1,8 +1,13 @@
 import 'package:borrow_money/presentation/page/login_page.dart';
+import 'package:borrow_money/presentation/resources/app_listdata.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(ChangeNotifierProvider(
+    create: (create) => ListDataDemo(),
+    child: const MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {

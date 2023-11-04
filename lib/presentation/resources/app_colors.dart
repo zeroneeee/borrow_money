@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-Color secondaryColor = const Color.fromRGBO(211, 253, 85, 1);
-Color backgroundColor = Colors.grey;
-Color textBaseColor = const Color.fromRGBO(41, 51, 58, 1);
-
 class AppColors {
+  static const Color secondaryColor = Color.fromRGBO(211, 253, 85, 1);
+  static const Color backgroundColor = Colors.grey;
+  static const Color textBaseColor = Color.fromRGBO(41, 51, 58, 1);
+
   static const Color primary = contentColorCyan;
   static const Color menuBackground = Color(0xFF090912);
   static const Color itemsBackground = Color(0xFF1B2339);

@@ -14,8 +14,8 @@ class LogInPage extends StatelessWidget {
       appBar: AppBar(
         title: const Center(child: Text("This Login Page")),
         elevation: 0,
-        backgroundColor: secondaryColor,
-        foregroundColor: textBaseColor,
+        backgroundColor: AppColors.secondaryColor,
+        foregroundColor: AppColors.textBaseColor,
       ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
@@ -25,7 +25,7 @@ class LogInPage extends StatelessWidget {
             const SizedBox(height: 50),
             Padding(
               padding: const EdgeInsets.all(50.0),
-              child: Image.asset('lib/images/green_coin.png'),
+              child: Image.asset('lib/presentation/images/green_coin.png'),
             ),
             MyButton(
               text: "login",
