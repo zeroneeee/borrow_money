@@ -1,5 +1,7 @@
 # Borrow Money - Flutter Application
 
+# This project is currently being redesigned.
+
 ![App Screenshot](screenshot.png)
 
 ## Overview
