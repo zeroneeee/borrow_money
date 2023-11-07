@@ -2,6 +2,8 @@ import 'package:borrow_money/presentation/page/login_page.dart';
 import 'package:borrow_money/presentation/resources/app_listdata.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'presentation/page/demo_dashbord.dart';
+import 'presentation/page/page_history.dart';
 
 void main() {
   runApp(ChangeNotifierProvider(
@@ -14,9 +16,14 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LogInPage(),
+      home: const LogInPage(),
+      routes: {
+        '/historypagr': (context) => const HistoryPage(),
+        '/dashbordpage': (context) => const PieChartSample2(),
+        '/loginpage': (context) => const LogInPage(),
+      },
     );
   }
 }

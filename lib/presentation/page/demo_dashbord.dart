@@ -24,14 +24,21 @@ class PieChart2State extends State {
 
   @override
   Widget build(BuildContext context) {
-    // get list data base
-    final data = context.read<ListDataDemo>();
-    final listDataDemo = data.listDataDemo;
-
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Dashborad page"),
-        leading: const Icon(Icons.menu_book),
+        title: const Center(child: Text("Dashborad page")),
+        leading: const Icon(
+          Icons.menu_book,
+          color: AppColors.secondaryColor,
+        ),
+        actions: [
+          IconButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/historypagr');
+            },
+            icon: const Icon(Icons.history),
+          )
+        ],
         backgroundColor: AppColors.secondaryColor,
         elevation: 0,
         foregroundColor: AppColors.textBaseColor,
@@ -92,18 +99,6 @@ class PieChart2State extends State {
             const SizedBox(height: 8),
 
             // List view show record data.
-
-            const Text("ประวัติ"),
-
-            Expanded(
-              child: ListView.builder(
-                scrollDirection: Axis.vertical,
-                itemCount: listDataDemo.length,
-                itemBuilder: (context, index) => DataOder(
-                  dataDemo: listDataDemo[index],
-                ),
-              ),
-            ),
 
             const SizedBox(
               height: 25,
